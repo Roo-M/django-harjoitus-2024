@@ -8,7 +8,7 @@ urlpatterns = [
     # esim: /kyselyt/5/
     path("<int:question_id>/", views.näytä, name="näytä"),
     # esim: /kyselyt/5/results/
-    path("<int:question_id>/results/", views.tulokset, name="tulokset"),
+    path("<int:question_id>/tulokset/", views.tulokset, name="tulokset"),
     # esim: /kyselyt/5/vote/
-    path("<int:question_id>/vote/", views.äänestä, name="äänestä"),
+    path("<int:question_id>/äänestä/", views.äänestä, name="äänestä"),
 ]
